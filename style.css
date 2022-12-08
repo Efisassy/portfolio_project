@@ -1,0 +1,47 @@
+h3{
+font-weight: bolder;
+}
+
+p{
+    font-style: italic;
+    font-size: large;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    
+  }
+  
+ 
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    
+    
+  }
+
+  .img{
+    filter: blur(1px);
+  -webkit-filter: blur(3px)
+
+  }
