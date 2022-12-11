@@ -1,0 +1,7 @@
+i think this is how you should load your page now.
+
+By directly opening from the filesystem.
+
+Your liveserver has a lot of issues and cannot start.
+
+I recommend using it this way.
