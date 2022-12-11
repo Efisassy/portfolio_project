@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>start</title>
+  <title>portfolio project</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
@@ -89,11 +89,32 @@
       <div class="modal-body">
          is available 
       </div>
+      <form action="/action_page.php">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="date" name="date">
+        <input type="submit">
+      </form>
+      <select  name="days" id="days">
+        <option value="">Select a day</option>
+        <option value="">Monday</option>
+        <option value="">Tuesday</option>
+        <option value="">Wednesday</option>
+        <option value="">Thursday</option>
+        <option value="">Friday</option>
+        <option value="">Saturday</option>
+        <option value="">Sunday</option>
+        </select>
+        <select name="" id="">
+          <option value="">Select check in time</option>
+          <option value=""></option>
+
+        
+      
      
       <div class="modal-footer">
         
         <button type="button" class="btn btn-success">Cancel</button>
-        <button type="button" class="btn btn-success">Book</button>
+        <button onclick="myFunction()" type="button" class="btn btn-success">Book</button>
         
       </div>
     </div>

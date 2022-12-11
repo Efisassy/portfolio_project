@@ -33,3 +33,7 @@ $(document).ready(function () {
     })
 })
 
+function myFunction(){
+    alert("Hello  username thanks for patronosing us")
+}
+
