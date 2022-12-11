@@ -23,4 +23,13 @@ $(document).ready(function () {
             }
         })
     });
+
+    //Handle Modal Settings
+    $('#room_availiable').click(function(){
+        $('#available_modal').on('shown.bs.modal', function () {
+            $('#available_modal').modal('show')
+          })
+        
+    })
 })
+
