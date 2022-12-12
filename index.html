@@ -13,7 +13,7 @@
   <script src="./jquery/jquery-3.6.1.min.js"></script>
   <script src="./script.js"></script>
 </head>
-
+<!--NAVBAR-->
 <body>
   <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container-fluid">
@@ -38,9 +38,6 @@
   <!--LANDING PAGE-->
   <div class="bg-image">
     <img class="img" src="./img/hotel1.jpg" alt="Snow" style="width:100%;">
-
-
-
     <div class="centered">
       <i><i class="bi bi-star-fill"></i></i>
       <i><i class="bi bi-star-fill"></i></i>
@@ -48,10 +45,6 @@
       <i><i class="bi bi-star-fill"></i></i>
       <i><i class="bi bi-star-fill"></i></i>
   
-  
-  
-  
- 
       <p>Lodging Experts</p><br>
       <p>We help you find a better accomodation whereever you are</p>
       <button class="btn btn-success">Get started</button>
@@ -68,7 +61,8 @@
       <div class="card-body">
         <h5 class="card-title">Executive Bedroom</h5>
         <p class="card-text">Presidential suite<br> Pool View <br>
-           1 king Bed</p><br>
+          $<span id="price">460</span>
+           </p><br>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
           Check Room Availability
         </button>
@@ -88,27 +82,19 @@
         </button>
       </div>
       <div class="modal-body">
-         is available 
+        
+         <div>
+      <label for="Date">From</label>
+  <input type="date" id="birthday" name="birthday" required></div>
+
+  <div>
+    <label for="Date">To</label>
+<input type="date" id="birthday" name="birthday" required></div>
+<input type="number" name="Number of days" id="number_of_days">
       </div>
-      <div>
-        <select name="" id="">
-          <option value="">Select Time</option>
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4</option>
-          <option value="">5</option>
-          <option value="">6</option>
-          <option value="">7</option>
-          <option value="">8</option>
-          <option value="">9</option>
-          <option value="">10</option>
-        </select>
-      </div>
-      
-      
-     
-      <div class="modal-footer">
+
+    
+<div class="modal-footer">
         
         <button type="button" class="btn btn-success">Cancel</button>
         <button onclick="myFunction()" type="button" class="btn btn-success">Book</button>
@@ -121,7 +107,8 @@
       <img src="./img/hotel3.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Executive Bedroom</h5>
-        <p class="card-text">Wireless Internet <br> Bathrobe <br> pillow menu </p>
+        <p class="card-text">Wireless Internet <br> Bathrobe <br> 
+         $<span id="price2">650</span></p>
         </p><br>
 
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
@@ -133,7 +120,8 @@
       <img src="./img/hotel4.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Executive Bedroom</h5>
-        <p class="card-text">Wireless internet <br> family suite <br>sea View </p>
+        <p class="card-text">Wireless internet <br> family suite <br>
+         $<span id="price3">350</span></p>
         </p><br>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
           Check Room Availability

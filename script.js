@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     // Submitting the  form on click
     $("#loginForm").submit(function () {
-        event.preventDefault();
+        //event.preventDefault();
         email = $("#email").val();
         pwd =  $("#pwd").val();
         let data = {
@@ -34,6 +34,36 @@ $(document).ready(function () {
 })
 
 function myFunction(){
-    alert("Hello  username thanks for patronosing us")
+    
+    const amount = $('#price').text()
+    console.log(amount)
+    const valOfThis = $('#number_of_days').val()
+    console.log(valOfThis)
+    let result = +amount * +valOfThis
+    console.log(result)
+    alert('Your bill is ' + '$' + result)
 }
+function myFunction2(){
+    
+    const amount = $('#price1').text()
+    console.log(amount)
+    const valOfThis = $('#number_of_days').val()
+    console.log(valOfThis)
+    let result = +amount * +valOfThis
+    console.log(result)
+    alert('Your bill is ' + result)
+}
+function myFunction3(){
+    
+    const amount = $('#price3').text()
+    console.log(amount)
+    const valOfThis = $('#number_of_days').val()
+    console.log(valOfThis)
+    let result = +amount * +valOfThis
+    console.log(result)
+    alert('Your bill is ' + result)
+}
+
+//payment
+
 
