@@ -64,7 +64,7 @@
           $<span id="price">460</span>
            </p><br>
         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-          Check Room Availability
+          Check Availability
         </button>
       </div>
     </div>
@@ -76,28 +76,27 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel"><h5></h5>Executive bedroom</h5>
+        <h5 class="modal-title" id="exampleModalLabel"><h5></h5> <strong>EXECUTIVE BEDROOM</strong></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
-      <div class="modal-body">
-        
+      <div class="modal-body bg-success">  
          <div>
-      <label for="Date">Check Inn</label>
+      <label class="text-white" for="Date">Check Inn</label>
   <input type="date" id="birthday" name="birthday" required>
 </div>
 
   <div>
-    <label class="mt-3" for="Date">Check out</label>
+    <label class="mt-3 text-white" for="Date">Check out</label>
 <input type="date" id="days" name="days">
 </div>
-<input class="mt-3" type="number" name="Number of days" id="number_of_days">
+<div class=""><input class="mt-3 " type="number" name="Number of days" id="number_of_days" placeholder="Select Days"></div>
       </div>
 
     
-<div class="modal-footer">
+<div class="modal-footer bg-success">
         
         <button type="button" class="btn btn-success">Cancel</button>
         <button onclick="myFunction()" type="button" class="btn btn-success">Book</button>

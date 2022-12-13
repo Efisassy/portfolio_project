@@ -41,7 +41,9 @@ function myFunction(){
     console.log(valOfThis)
     let result = +amount * +valOfThis
     console.log(result)
-    alert('Your bill is ' + '$' + result)
+    alert('An executive suite has been booked on'+ 
+    '\n'+'Your bill is ' + '$' + result + 
+    '\n' + 'Thanks for patronising us' +'\n' +'Have a wonderful stay')
 }
 function myFunction2(){
     
