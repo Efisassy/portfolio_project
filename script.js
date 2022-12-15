@@ -2,6 +2,7 @@ $(document).ready(function () {
     // Getting data from the form
     let email = "";
     let pwd = "";
+    let userName ="";
     const url = 'http://localhost:3000/api';
 
     // Submitting the  form on click
@@ -12,6 +13,27 @@ $(document).ready(function () {
         let data = {
             password: pwd,
             email: email
+        }
+       $.ajax("http://localhost:3000/api/login", {
+            data: JSON.stringify(data),
+            contentType: 'application/json',
+            type:'POST',
+            success: function(){
+                console.log("success");
+            }
+        })
+    });
+    //Submitting sign up form
+    $("#signupForm").submit(function () {
+        event.preventDefault();
+        email = $("#email").val();
+        pwd =  $("#pwd").val();
+        userName =$("#userName").val();
+        let data = {
+            password: pwd,
+            email: email,
+            userName: userName
+
         }
         console.log(data);
         $.ajax(url, {
